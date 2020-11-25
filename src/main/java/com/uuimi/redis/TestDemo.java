@@ -23,9 +23,9 @@ public class TestDemo {
 	 */
 	public static void main(String[] args) throws Exception {
 		
-		for (int i = 1; i <= 10; i++) {
-			//final int sleep = 200;
-			final int sleep = i != 2 ? 200 : 2000;
+		for (int i = 1; i <= 100; i++) {
+			//final int sleep = 300;
+			final int sleep = i != 2 ? 300 : 1200; // 1030
 			new Thread(() -> {
 				doSomething(sleep);
 			}, "thread-" + i).start();
