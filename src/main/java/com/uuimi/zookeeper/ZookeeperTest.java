@@ -9,7 +9,7 @@ import org.apache.zookeeper.ZooKeeper;
  * @Description: 测试类
  * @author zhanghaolin
  */
-public class TestDemo {
+public class ZookeeperTest {
 
 	/**
 	 * 

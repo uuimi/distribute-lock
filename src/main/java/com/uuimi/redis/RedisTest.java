@@ -14,7 +14,7 @@ import redis.clients.jedis.Jedis;
  * @Description: 测试类
  * @author zhanghaolin
  */
-public class TestDemo {
+public class RedisTest {
 
 	/**
 	 * 
