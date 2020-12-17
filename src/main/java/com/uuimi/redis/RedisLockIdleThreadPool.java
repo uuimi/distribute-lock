@@ -27,7 +27,7 @@ public class RedisLockIdleThreadPool {
 		if (scheduledThreadPool == null) {
 			synchronized (this) {
 				if (scheduledThreadPool == null) {
-					scheduledThreadPool = Executors.newScheduledThreadPool(1);
+					scheduledThreadPool = Executors.newSingleThreadScheduledExecutor();
 					
 					scheduledThreadPool.scheduleAtFixedRate(() -> {
 						addLife();
